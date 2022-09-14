@@ -6,6 +6,7 @@ CHANGELOG
 
  * Deprecate `StopWorkerOnSignalsListener` in favor of using the `SignalableCommandInterface`
  * Add `HandlerDescriptor::getOptions`
+ * Separate `WorkerRunningEvent` into `WorkerBusyEvent` and `WorkerIdleEvent`
 
 6.3
 ---
