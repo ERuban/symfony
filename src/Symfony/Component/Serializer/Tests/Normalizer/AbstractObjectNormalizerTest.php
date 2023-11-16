@@ -596,7 +596,7 @@ class AbstractObjectNormalizerTest extends TestCase
     }
 
     /**
-     * @dataProvider getUntypedContexts
+     * @dataProvider denormalizeBasicTypePropertiesConversionDataProvider
      */
     public function testDenormalizeBasicTypePropertiesConversion(string $format, array $context = [])
     {
@@ -659,7 +659,7 @@ class AbstractObjectNormalizerTest extends TestCase
         );
     }
 
-    public function denormalizeBasicTypePropertiesConversionDataProvider()
+    public function denormalizeBasicTypePropertiesConversionDataProvider(): array
     {
         return [
             ['xml', []],
