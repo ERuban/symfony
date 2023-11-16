@@ -644,7 +644,7 @@ class AbstractObjectNormalizerTest extends TestCase
         $this->assertEquals(-\INF, $objectWithBooleanProperties->floatNegInf);
     }
 
-    public function testDenormalizeBasicTypePropertiesThrows()
+    public function testDenormalizeBasicTypePropertiesThrowsWithoutTypeConversion()
     {
         $this->expectException(NotNormalizableValueException::class);
         $this->expectExceptionMessageMatches('/must be one of "bool" \("string" given\)/');
