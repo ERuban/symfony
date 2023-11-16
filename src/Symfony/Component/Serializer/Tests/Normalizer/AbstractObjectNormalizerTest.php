@@ -659,7 +659,7 @@ class AbstractObjectNormalizerTest extends TestCase
         );
     }
 
-    public function getUntypedContexts()
+    public function denormalizeBasicTypePropertiesConversionDataProvider()
     {
         return [
             ['xml', []],
